@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <div id="recipe-container">
+            <div class="header">
+                <h1>Recipes</h1>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search for recipes..." id="inputValue" />
+            </div>
+            <div id="recipes-space">
+                
+            </div>
+        </div>
+    </div>
+    <div class="recipe-making-container">
+            <div class="recipe-details"></div>
+                <img src="" alt="Recipe Image" class="recipe-image2" id="rs2">
+                <h2 class="recipe-title"></h2>
+                <div class="meal-type">
+                    <span>Meal Type: </span>
+                    <span class="type"></span>
+                </div>
+                <div class="rating">
+                    <span>Rating: </span>
+                    <span class="stars"></span>
+                </div>
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ol id="instructions-list">
+                        
+                    </ol>
+                </div>
+                <button id="leftarrow" class="view-btn">GO Backward</button>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="localstorage.js"></script>
+</html>
