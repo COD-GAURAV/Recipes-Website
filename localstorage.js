@@ -89,12 +89,12 @@ Array.from(recipeCards).forEach((card)=>{
             }
         })
     })
+   const input = document.getElementById("inputValue") 
    input.addEventListener("input",(e)=>{
     document.querySelector("#recipes-space").innerHTML = ""
     let filter = dataInArray.filter((val)=>{
         return val.name.toLowerCase().startsWith(input.value.toLowerCase()) 
     })
-     console.log(filter)
      renderRecipes(filter)
     })  
 
